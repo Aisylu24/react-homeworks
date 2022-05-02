@@ -1,0 +1,26 @@
+.button {
+    overflow:hidden;
+    cursor:pointer;
+    font-weight: bold;
+    margin: 10px 15px;
+    width: 70px;
+    height:30px;
+    border-radius: 10px;
+}
+
+
+
+.default {
+    background: mistyrose;
+    color: palevioletred;
+    outline: none;
+    border-color: palevioletred;
+}
+
+.red {
+    background: crimson;
+}
+
+button:disabled {
+    background-color: lightgrey;
+}

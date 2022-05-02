@@ -1,0 +1,54 @@
+.button {
+    font-weight: bold;
+    margin:10px;
+    width: 70px;
+    height:30px;
+    background: mistyrose;
+    color: palevioletred;
+    outline: none;
+}
+
+.button:focus {
+    outline: hotpink solid 2px;
+
+}
+
+.button:active {
+    background: hotpink;
+}
+
+
+.active {
+    background: mediumpurple;
+}
+
+.affair {
+    display:flex;
+}
+
+
+.item {
+    color: palevioletred;
+    font-family: Aharoni;
+    font-size: 15px;
+    font-weight: inherit;
+    border-radius: 50%;
+    margin: 20px;
+    width: 70px;
+}
+
+.high {
+    font-family: Aharoni;
+    color: darkblue;
+}
+
+.middle {
+    font-family: Aharoni;
+    color: royalblue;
+}
+
+.low {
+    font-family: Aharoni;
+    color: lightsteelblue;
+}
+

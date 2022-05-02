@@ -1,0 +1,18 @@
+.App {
+    position: relative;
+}
+
+
+.image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.25;
+}
+
+.hw {
+    position: relative;
+    z-index: 2;
+}

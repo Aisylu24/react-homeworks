@@ -1,0 +1,26 @@
+import React from 'react'
+import s from './App.module.css'
+import HW1 from '../../../p2-homeworks/h1/HW1'
+import HW2 from "../../../p2-homeworks/h2/HW2";
+import HW3 from "../../../p2-homeworks/h3/HW3";
+import HW4 from "../../../p2-homeworks/h4/HW4";
+import HW5 from "../../../p2-homeworks/h5-rrd-v6/HW5";
+
+function App() {
+    return (
+        <div className={s.App}>
+            <img alt={'background'} className={s.image} src={'https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?t=st=1651472801~exp=1651473401~hmac=4e975ebf8eb41c0357cf11a6a78c8fbeb09c88ffe148fe5cdda91b5f60f02f1b&w=1060'}/>
+            <div className={s.hw}>
+            <div> react homeworks:</div>
+    {/*<HW1/>*/}
+    {/*<HW2/>*/}
+    {/*<HW3/>*/}
+    {/*<HW4/>*/}
+    <HW5/>
+
+            </div>
+</div>
+)
+}
+
+export default App
