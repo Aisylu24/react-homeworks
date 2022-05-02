@@ -1,0 +1,48 @@
+
+.links {
+    width: 350px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 10px;
+    transition: transform .5s;
+    transform: translate(-270px);
+}
+
+.links:hover {
+    transform: translate(0);
+}
+
+.links a {
+    font-size: 20px;
+    font-family: Aharoni sans-serif;
+    padding: 8px;
+    margin:5px;
+    text-decoration: none;
+    border-radius: 10px;
+
+}
+
+
+.links a:focus{
+    color: hotpink;
+}
+
+.links a:hover{
+    background-color: mediumpurple;
+}
+
+
+
+
+.showLinks {
+    margin: 5px;
+    background-color: hotpink;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+
+
+
