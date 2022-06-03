@@ -1,24 +1,27 @@
-.checkbox {
+.label {
+    font-family: Aharoni, sans-serif;
+    font-size: medium;
+    color: palevioletred;
+}
+
+.radio {
     appearance: none;
     width: 20px;
     height: 20px;
     background: hotpink;
     border-radius: 50%;
-    margin-right:10px;
+    margin-right: 10px;
 }
 
-.checkbox:checked {
+.radio:checked {
     border: 6px solid hotpink;
     appearance: none;
     background: mistyrose;
 }
 
-.spanClassName {
 
-}
-
-.checkbox:hover {
+.radio:hover {
     cursor: pointer;
     border: 6px solid hotpink;
-
+    background: mistyrose;
 }

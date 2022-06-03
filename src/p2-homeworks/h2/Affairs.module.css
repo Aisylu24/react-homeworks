@@ -29,26 +29,23 @@
 
 .item {
     color: palevioletred;
-    font-family: Aharoni;
+    font-family: Aharoni, sans-serif;
     font-size: 15px;
-    font-weight: inherit;
+    font-weight: bold;
     border-radius: 50%;
     margin: 20px;
     width: 70px;
 }
 
 .high {
-    font-family: Aharoni;
     color: darkblue;
 }
 
 .middle {
-    font-family: Aharoni;
     color: royalblue;
 }
 
 .low {
-    font-family: Aharoni;
     color: lightsteelblue;
 }
 
