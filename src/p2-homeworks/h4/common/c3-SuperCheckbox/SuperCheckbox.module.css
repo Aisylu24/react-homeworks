@@ -20,5 +20,5 @@
 .checkbox:hover {
     cursor: pointer;
     border: 6px solid hotpink;
-
+    background: mistyrose;
 }
