@@ -1,6 +1,17 @@
-.text {
+/*.text {*/
+/*    font-size: 20px;*/
+/*    font-family: Aharoni sans-serif;*/
+/*    color: rebeccapurple;*/
+/*    margin:10px;*/
+/*}*/
+
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    margin-left: 10px;
     font-size: 20px;
     font-family: Aharoni sans-serif;
     color: rebeccapurple;
-    margin:10px;
 }
