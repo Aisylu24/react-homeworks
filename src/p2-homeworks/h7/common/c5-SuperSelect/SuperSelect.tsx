@@ -33,10 +33,11 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
     )
 
     return (
+        <div className={s.div}>
         <select className={finalSelectClassName} onChange={onChangeCallback} {...restProps}>
             {mappedOptions}
         </select>
-
+            </div>
     )
 }
 

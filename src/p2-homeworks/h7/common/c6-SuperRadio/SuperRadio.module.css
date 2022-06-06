@@ -2,6 +2,9 @@
     font-family: Aharoni, sans-serif;
     font-size: medium;
     color: palevioletred;
+    display: flex;
+    align-items: center;
+    margin: 5px;
 }
 
 .radio {
@@ -10,7 +13,7 @@
     height: 20px;
     background: hotpink;
     border-radius: 50%;
-    margin-right: 10px;
+
 }
 
 .radio:checked {
@@ -24,4 +27,10 @@
     cursor: pointer;
     border: 6px solid hotpink;
     background: mistyrose;
+}
+
+.radioDiv {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
 }

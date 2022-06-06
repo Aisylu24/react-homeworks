@@ -27,14 +27,15 @@ function HW4() {
             homeworks 4
 
             <div className={s.column}>
-                <SuperInputText
+
+                    <SuperInputText
                     value={text}
 
                     onChangeText={setText}
                     onEnter={showAlert}
                     error={error}
                     // spanClassName={s.testSpanError}
-                />
+                    />
 
                 <SuperInputText
                     className={s.blue} // проверьте, рабоет ли смешивание классов
@@ -47,10 +48,10 @@ function HW4() {
                 </SuperButton>
 
                 <SuperButton
-                    red // пропсу с булевым значением не обязательно указывать true
+                    del // пропсу с булевым значением не обязательно указывать true
                     onClick={showAlert}
                 >
-                    delete {/*// название кнопки попадёт в children*/}
+                    x {/*// название кнопки попадёт в children*/}
                 </SuperButton>
 
                 <SuperButton disabled>

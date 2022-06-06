@@ -8,24 +8,14 @@
     outline: none;
 }
 
-.button:focus {
-    outline: hotpink solid 2px;
-
-}
-
-.button:active {
-    background: hotpink;
-}
-
-
-.active {
+.active:focus {
     background: mediumpurple;
 }
 
 .affair {
     display:flex;
+    align-items: center;
 }
-
 
 .item {
     color: palevioletred;

@@ -8,11 +8,18 @@
 }
 
 .error {
-    font-family: Aharoni;
+    font-family: Aharoni, sans-serif;
     color: mediumpurple;
 }
 
 input:focus {
     outline: none;
-    border: palevioletred solid 2px;
+    border: hotpink solid 2px;
+    box-shadow: 1px 1px 2px 0 blue;
+}
+
+input {
+    margin:5px;
+    border-color: palevioletred;
+    padding: 3px;
 }

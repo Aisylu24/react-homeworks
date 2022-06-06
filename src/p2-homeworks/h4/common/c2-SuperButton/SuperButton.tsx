@@ -5,16 +5,17 @@ import s from './SuperButton.module.css'
 type DefaultButtonPropsType = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
 
 type SuperButtonPropsType = DefaultButtonPropsType & {
-    red?: boolean
+    del?: boolean
+    filter?:boolean
 }
 
 const SuperButton: React.FC<SuperButtonPropsType> = (
     {
-        red, className,
+        filter,del, className,
         ...restProps// все остальные пропсы попадут в объект restProps, там же будет children
     }
 ) => {
-    const finalClassName = `${s.button} ${red ? s.red : s.default} ${className}`
+    const finalClassName = `${s.button} ${(del && s.delete) || (filter && s.filter && s.default) || s.default} ${className}`
 
     return (
         <button
