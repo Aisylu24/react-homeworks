@@ -21,13 +21,6 @@ const initialPeople:Array<UserType> = [
 function HW8() {
     const [people, setPeople] = useState<Array<UserType>>(initialPeople)
 
-    // const finalPeople = people.map((p: UserType) => (
-    //     <tr key={p._id} >
-    //         <td>{p.name}</td>
-    //         <td>{p.age}</td>
-    //     </tr>
-    //
-    // ))
     const finalPeople = people.map((p: UserType) => (
       <div key={p._id} className={s.item}>
             <td>{p.name}</td>
