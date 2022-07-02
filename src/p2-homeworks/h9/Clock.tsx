@@ -11,9 +11,11 @@ function Clock() {
     }
     const start = () => {
         stop()
+        console.log('stop')
         const id: number = window.setInterval(() => {
             setDate(new Date())
         }, 1000)
+            console.log(id)
         setTimerId(id)
     }
 
