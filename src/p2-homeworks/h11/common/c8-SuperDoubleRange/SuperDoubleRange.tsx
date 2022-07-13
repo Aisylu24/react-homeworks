@@ -1,23 +1,41 @@
 import React from 'react'
+import s from './SuperDoubleRange.module.css'
 
 type SuperDoubleRangePropsType = {
-    onChangeRange?: (value: [number, number]) => void
+    onChangeRangeMin: (value1: number) => void
+    onChangeRangeMax: (value2: number) => void
     value?: [number, number]
-    // min, max, step, disable, ...
+    // min: number
+    // max:number
+    // step:number
+    // disable: boolean
 }
 
 const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
     {
-        onChangeRange, value,
-        // min, max, step, disable, ...
+        onChangeRangeMin,onChangeRangeMax, value,
+        ...restProps
     }
 ) => {
     // сделать самому, можно подключать библиотеки
-
+     let finalRangeClassName = `${s.range} `
     return (
-        <>
-            DoubleRange
-        </>
+        <div className={s.container} >
+            <input
+                type={'range'}
+                onChange={(e) =>{ onChangeRangeMin(+e.currentTarget.value)}}
+               className={finalRangeClassName}
+
+                {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
+            />
+            <input
+                type={'range'}
+                onChange={(e)=>onChangeRangeMax(+e.currentTarget.value)}
+               className={finalRangeClassName}
+
+                {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
+            />
+        </div>
     )
 }
 
