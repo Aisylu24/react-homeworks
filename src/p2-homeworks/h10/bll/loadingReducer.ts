@@ -9,7 +9,7 @@ export type StateType = {
 
 type ActionType = loadingTypeAC
 
-type loadingTypeAC = {
+export type loadingTypeAC = {
     type: 'SET-LOADING'
     loading: boolean
 }
