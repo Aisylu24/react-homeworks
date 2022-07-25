@@ -12,7 +12,7 @@
     color: mediumpurple;
 }
 
-input:focus {
+input:checked {
     outline: none;
     border: hotpink solid 2px;
     box-shadow: 1px 1px 2px 0 blue;

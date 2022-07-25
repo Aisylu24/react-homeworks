@@ -1,0 +1,6 @@
+.container {
+    display:flex;
+    font-family: Aharoni sans-serif;
+    color: rebeccapurple;
+    align-items: center;
+}
